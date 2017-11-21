@@ -1,0 +1,5 @@
+.Filter-TagClose {
+  &:hover {
+    opacity: .7;
+  }
+}

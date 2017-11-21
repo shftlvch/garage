@@ -1,0 +1,91 @@
+$cardInnerPadding:  24px;
+
+.Card {
+  background: #fff;
+  width: 272px;
+  padding-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) and (max-width: 999px) {
+    width: 324px;
+    & .Card-Pic {
+      height: 324px;
+    }
+  } @media screen and (min-width: 1000px) and (max-width: 1279px) {
+  width: 286px;
+  & .Card-Pic {
+    height: 286px;
+
+  }
+} @media screen and (min-width: 1280px) {
+  width: 336px;
+  & .Card-Pic {
+    height: 336px;
+
+  }
+}
+}
+
+.Card-Section {
+  display: inline-block;
+  text-decoration: none;
+
+  padding: 0 $cardInnerPadding;
+  margin-bottom: 13px;
+
+  color: #30bfb3;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.Card-Title {
+  padding: 0 $cardInnerPadding;
+  margin-bottom: 33px;
+
+  color: #262626;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.Card-Marker {
+  display: inline-block;
+
+  width: 10px;
+  height: 15px;
+  background: url("./Location/marker@2x.png") no-repeat;
+  background-size: 100%;
+  margin-bottom: -3px;
+  margin-right: 2px;
+}
+
+.Card-Location {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 0 $cardInnerPadding;
+//margin-bottom: 27px; color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.Card-Time {
+  padding: 0 $cardInnerPadding;
+  margin-bottom: 27px;
+
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.Card-Pic {
+  width: 100%;
+  height: 272px;
+  background-size: cover;
+  background-position: center;
+}

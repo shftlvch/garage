@@ -1,0 +1,11 @@
+.Dropdown-Body {
+  &:hover {
+    color: #000000;
+  }
+}
+
+.Dropdown-Item {
+  &:hover {
+    color: #30bfb3;
+  }
+}

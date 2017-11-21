@@ -1,0 +1,125 @@
+.Dropdown {
+  display: inline-block;
+}
+
+.Dropdown-Body {
+  display: inline-block;
+  position: relative;
+  color: #999999;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 0 21px 0 0;
+  line-height: 63px;
+  cursor: pointer;
+
+  &::after {
+    width: 15px;
+    height: 8px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    background: url("./img/chevron-closed@2x.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.Dropdown_opened {
+  & .Dropdown-Body {
+    color: #000000;
+
+    &::after {
+      background-image: url("./img/chevron-opened@2x.png");
+    }
+  }
+
+  & .Dropdown-Items {
+    display: block;
+  }
+}
+
+
+.Dropdown-Items {
+  display: none;
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -25px;
+  z-index: 100;
+  padding: 10px 0;
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: #000000;
+}
+
+.Dropdown-Group {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.Dropdown-GroupLabel {
+  color: #999999;
+  font-size: 21px;
+  font-weight: 400;
+  border-bottom: solid 1px #262626;
+  padding: 17px 34px 14px 0;
+}
+
+.Dropdown-Item {
+  position: relative;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  border-bottom: solid 1px #262626;
+  padding: 17px 34px 14px 0;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: transparent;
+  }
+
+  &.Dropdown-Item_chosen::after {
+    width: 16px;
+    height: 11px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 21px;
+    background: url("./img/check@2x.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Dropdown-Group {
+    padding: 0;
+  }
+
+  .Dropdown-Items {
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    max-height: 100vh;
+    margin-left: 0;
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .Dropdown-Group {
+    padding: 0;
+    width: 50%;
+  }
+
+  .Dropdown-Items {
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    max-height: 100vh;
+    margin-left: 0;
+  }
+} @media screen and (min-width: 1000px) and (max-width: 1279px) {
+} @media screen and (min-width: 1280px) {
+}
