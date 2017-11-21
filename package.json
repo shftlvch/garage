@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "i": "yarn",
+    "start": "npm-run-all --parallel build-dev server-dev",
     "start-dev": "npm-run-all --parallel build-dev server-dev",
     "server": "npm run build; node server/index.js",
     "server-dev": "nodemon server/index.js",
