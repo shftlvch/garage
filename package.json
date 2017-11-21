@@ -52,7 +52,7 @@
     "npm-run-all": "^4.1.2",
     "postcss-nesting": "^4.2.1",
     "url-loader": "^0.6.2",
-    "volleyball": "^1.4.1",
+    "volleyball": "^1.4.1"
   },
   "devDependencies": {
 
