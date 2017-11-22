@@ -1,10 +1,8 @@
-.Button {
-  color: #999999;
-  font-size: 17px;
-  font-weight: 400;
-  cursor: pointer;
+@media (hover: hover) {
+  .Button {
 
-  &:hover  {
-    color: #30bfb3;
+    &:hover  {
+      color: #30bfb3;
+    }
   }
 }

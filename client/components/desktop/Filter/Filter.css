@@ -1,5 +1,7 @@
-.Filter-TagClose {
-  &:hover {
-    opacity: .7;
+@media (hover: hover) {
+  .Filter-TagClose {
+    &:hover {
+      opacity: .7;
+    }
   }
 }

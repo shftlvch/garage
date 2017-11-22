@@ -1,11 +1,13 @@
-.Dropdown-Body {
-  &:hover {
-    color: #000000;
+@media (hover: hover) {
+  .Dropdown-Body {
+    &:hover {
+      color: #000000;
+    }
   }
-}
 
-.Dropdown-Item {
-  &:hover {
-    color: #30bfb3;
+  .Dropdown-Item {
+    &:hover {
+      color: #30bfb3;
+    }
   }
 }
