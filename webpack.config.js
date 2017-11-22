@@ -33,7 +33,8 @@ module.exports = {
                         options: {
                             levels: [
                                 `${__dirname}/client/components/common`,
-                                `${__dirname}/client/components/desktop`
+                                `${__dirname}/client/components/desktop`,
+                                `${__dirname}/client/components/vendor`
                             ],
                             techs: ['js', 'css'],
                         },
@@ -57,7 +58,7 @@ module.exports = {
                     /\.gif$/,
                     /\.jpe?g$/,
                     /\.png$/,
-                    /\.inline\.\w+$/,
+                    /\.inline\.\w+$/
                 ],
                 loader: 'file-loader',
                 options: {

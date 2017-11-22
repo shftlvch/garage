@@ -4,6 +4,7 @@ import {Provider} from "react-redux";
 
 import List from "b:List";
 import Filter from "b:Filter";
+import HelveticaNeue from "b:Font e:HelveticaNeue t:css";
 
 
 export default decl({
